@@ -1,0 +1,386 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /** 1rem = 10px**/
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Helvetica", sans-serif;
+    background-color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+}
+
+img {
+    width: 100%;
+}
+
+#logoVet {
+    width: 20%;
+    margin-top: 1rem;
+    padding: 0;
+}
+
+h1 {
+    margin: 0 auto;
+    font-size: 3rem;
+}
+
+.header {
+    background-color: rgb(41, 142, 231);
+    color: #fff;
+    padding: 1rem;
+}
+
+.btn-primario {
+    background-color: rgba(238, 129, 129, 0.959);
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    align-items: center;
+    border-radius: 5px;
+    padding: .8rem;
+    display: block;
+}
+
+.add_pet {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    background-color: rgba(219, 193, 114, 0.35);
+    display: block;
+    font-size: 14px;
+    margin: auto;
+    padding: 15px;
+}
+
+@media only screen and (min-width: 769px) {
+    .input_text {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+        display: block;
+        font-size: 14px;
+        outline: medium none;
+    }
+    .search-bar {
+        margin: 5rem 1rem;
+    }
+    .add_pet {
+        width: 30%;
+    }
+}
+
+.btn_update {
+    display: inline-block;
+    font-size: 15px;
+    background: #1b743c;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+
+.btn_delete {
+    display: inline-block;
+    font-size: 15px;
+    background: #d61414;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn_save {
+    font-size: 14px;
+    background: rgb(3, 113, 163);
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: .5rem;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header-texto h1 {
+        padding-top: 4rem;
+        font-size: 4.5rem;
+    }
+    .login {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+    fieldset {
+        padding: 3rem;
+    }
+    a.btn-primario {
+        display: inline-block;
+        width: 90%;
+        margin-left: .8rem;
+        margin-right: .8rem;
+        font-size: 1.5rem;
+        border-radius: 5px;
+        border: 0;
+        padding: .7rem;
+    }
+    #logoVet {
+        width: 10%;
+        padding-right: 1rem;
+    }
+    img {
+        width: 50%;
+    }
+}
+
+.login {
+    width: 100%;
+    padding: 2rem;
+}
+
+.buscador {
+    width: 100%;
+    padding: 5rem;
+    background-color: rgba(219, 193, 114, 0.35);
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    margin-bottom: 5rem;
+}
+
+.mensaje-update blockquote {
+    background-color: #f05d5d;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.volver-link a {
+    color: rgb(3, 113, 163);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .buscador {
+        width: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        box-shadow: none;
+        border: none;
+        padding: 0 0 3rem;
+    }
+    .volver-link a {
+        color: rgb(3, 113, 163);
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    .btn_save {
+        display: inline-block;
+        font-size: 1.5rem;
+        width: 30%;
+        padding: .7rem;
+        margin: 10px 0 10px 0;
+    }
+    .mensaje-update blockquote {
+        background-color: #f05d5d;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: bold;
+        width: 30%;
+        margin: auto;
+    }
+}
+
+fieldset {
+    background-color: rgb(41, 142, 231);
+    color: #ffffff;
+}
+
+fieldset.form {
+    background-color: rgba(219, 193, 114, 0.35);
+    padding: 7px;
+    font-size: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    fieldset.form {
+        width: 30%;
+    }
+    .btn {
+        width: 30%;
+    }
+}
+
+label.uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #31a45e;
+}
+
+.tabla-linea {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    background-color: rgba(219, 193, 114, 0.35);
+    padding: 7px;
+    font-size: 15px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+}
+
+.good-cat {
+    padding: 20px;
+}
+
+.btn_search {
+    font-size: 2rem;
+    background: rgb(3, 113, 163);
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    padding: .8rem;
+    width: 100%;
+}
+
+@media only screen and (min-width: 769px) {
+    .tabla-linea {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 1.5rem;
+        margin: auto;
+        padding: 3rem;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .btn_search {
+        display: inline-block;
+        margin-left: .8rem;
+        margin-right: .8rem;
+        font-size: 1.5rem;
+        width: 80%;
+        padding: .5rem;
+    }
+    .formulario {
+        display: flex;
+        overflow: hidden;
+        width: 70%;
+    }
+    a.btn_new {
+        display: inline-block;
+        margin-left: .8rem;
+        margin-right: .8rem;
+        font-size: 1.5rem;
+        width: 90%;
+        padding: .7rem;
+    }
+}
+
+.espacio-input {
+    width: 100%;
+    padding: .6rem;
+    border-radius: 5px;
+}
+
+.space-between {
+    margin-bottom: 1rem;
+}
+
+.btn_new {
+    font-size: 2rem;
+    background: #1b743c;
+    color: #fff;
+    border-radius: 5px;
+    padding: .8rem;
+    display: block;
+    width: 100%;
+}
+
+.campo-input {
+    margin-bottom: 1.5rem;
+}
+
+@media only screen and (min-width: 769px) {
+    .campo-input {
+        margin-bottom: .5rem;
+    }
+}
+
+.campo-input input:not([type="submit"]) {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.head {
+    background: rgb(3, 113, 163);
+    font-weight: 600;
+    color: #fff;
+}
+
+.row-color {
+    background: #fff;
+}
+
+@media only screen and (max-width: 769px) {
+    .hide {
+        display: none;
+    }
+}
+
+.mensaje-sistema {
+    color: red;
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media only screen and (min-width: 769px) {
+    footer {
+        margin: 2rem auto;
+    }
+}
+
+footer {
+    background-color: rgb(41, 142, 231);
+    color: #fff;
+    padding: 4rem;
+    font-size: 1.5rem;
+}
